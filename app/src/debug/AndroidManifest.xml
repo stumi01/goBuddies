@@ -1,0 +1,10 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.stumi.gobuddies">
+
+
+    <application android:name=".GoBuddiesApplication">
+        <service android:name=".system.helper.LeakSlackUploadService" />
+
+    </application>
+
+</manifest>

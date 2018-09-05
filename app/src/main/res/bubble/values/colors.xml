@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="loading_color">#FFFFFF</color>
+    <color name="loading_color2">#FFAAFF</color>
+    <color name="loading_button_background">@android:color/darker_gray</color>
+    <color name="loading_button_progress1">@color/loading_color2</color>
+</resources>

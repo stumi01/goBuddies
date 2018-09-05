@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="fill_parent"
+              android:layout_height="wrap_content"
+              android:layout_margin="5dp"
+              android:background="@android:color/transparent"
+              android:orientation="vertical">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content">
+
+
+        <ImageView
+            android:id="@+id/team_icon"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:paddingLeft="0dp"
+            android:paddingStart="0dp"
+            android:paddingRight="5dp"
+            android:paddingEnd="5dp"
+            android:src="@drawable/no_team_single"/>
+
+        <TextView
+            android:id="@+id/team_size"
+            android:layout_width="30dp"
+            android:layout_height="20dp"
+            android:layout_alignBottom="@id/team_icon"
+            android:layout_gravity="center"
+            android:background="@drawable/team_finder_count_background"
+            android:gravity="center"
+            android:text="10"/>
+
+        <Button
+            android:id="@+id/joinButton"
+            android:layout_width="120dp"
+            android:layout_height="40dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/oval_responsive_button_medium"
+            android:text="JOIN REQUEST"
+            android:textColor="@drawable/medium_button_text_color"
+            android:textSize="15sp"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toEndOf="@id/team_icon"
+            android:layout_toLeftOf="@id/joinButton"
+            android:layout_toRightOf="@id/team_icon"
+            android:layout_toStartOf="@id/joinButton"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/team_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="WWWWWWWWWWWWWWW"
+                android:textSize="14sp"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/team_distance"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="100m"
+                android:textSize="12sp"/>
+
+
+        </LinearLayout>
+    </RelativeLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/party_members"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clipToPadding="false"
+        android:visibility="gone"/>
+
+</LinearLayout>

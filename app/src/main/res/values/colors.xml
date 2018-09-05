@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+
+    <color name="transparent">#00000000</color>
+    <color name="transparent_gray">#99000000</color>
+
+    <color name="notification_circle_messages">#0505FF</color>
+    <color name="notification_circle_requests">#FF0404</color>
+    <color name="notification_circle_text">#FFFFFF</color>
+
+    <color name="near_teams_count_text">#ffe6df</color>
+
+    <color name="base_gradient_start">#ff9d80</color>
+    <color name="base_gradient_middle">#fe817b</color>
+    <color name="base_gradient_end">#ff6479</color>
+
+    <color name="disabled_button">#9Adfbfb5</color>
+
+    <color name="base_pressed_gradient_start">#FFB199</color>
+    <color name="base_pressed_gradient_middle">#FE9A95</color>
+    <color name="base_pressed_gradient_end">#FF9AA8</color>
+
+    <color name="floating_activity_gradient_start">#FFFFFF</color>
+    <color name="floating_activity_gradient_end">#ffe4db</color>
+
+    <color name="tab_disabled_text_color">#cfcfcf</color>
+    <color name="tab_unselected_text_color">#6b696b</color>
+    <color name="tab_selected_text_color">#000000</color>
+
+    <color name="poke_orange">#FE845F</color>
+
+    <color name="dark_red">#cc4151</color>
+
+    <color name="edit_pencil_button_color">#e9c4be</color>
+    <color name="edit_ok_button_color">#58dda3</color>
+    <color name="edit_cancel_button_color">#f87c66</color>
+
+    <color name="color_error">@color/edit_cancel_button_color</color>
+    <color name="color_success">@color/edit_ok_button_color</color>
+
+    <color name="color_instinct">#fcd265</color>
+    <color name="color_mystic">#39c6fe</color>
+    <color name="color_valor">#f87c66</color>
+
+
+</resources>

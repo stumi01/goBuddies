@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:background="@android:color/transparent">
+
+    <RelativeLayout
+        android:id="@+id/loading_container"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/loading_background"
+        android:padding="8dp">
+        <!--TextView
+            android:id="@+id/loading_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/loading_text"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:textAlignment="center" /-->
+        <ProgressBar
+            android:id="@+id/loading_bar"
+            style="@style/Base.Widget.AppCompat.ProgressBar.Horizontal"
+            android:layout_width="100dp"
+            android:layout_height="24dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:indeterminate="true"
+            android:indeterminateTint="@color/base_gradient_start"
+            android:indeterminateTintMode="src_atop"
+            android:secondaryProgressTint="@color/base_gradient_end"
+            android:secondaryProgressTintMode="src_in" />
+
+        <ImageView
+            android:id="@+id/loading_done"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/ic_done_white_24dp"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/loading_fail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/loading_bar"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/ic_error_outline_white_24dp"
+            android:visibility="gone" />
+
+
+    </RelativeLayout>
+</FrameLayout>

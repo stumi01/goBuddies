@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/settings_fragment"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/transparent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/settings_buttons"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:paddingBottom="6dp"
+        android:clipToPadding="false"> <!--http://stackoverflow.com/a/34393155 -->
+
+        <Button
+            android:id="@+id/settings_backButton"
+            android:layout_width="120dp"
+            android:layout_height="40dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginLeft="2dp"
+            android:layout_marginStart="2dp"
+            android:layout_marginTop="2dp"
+            android:background="@drawable/oval_stroke_background_medium"
+            android:textColor="@color/base_gradient_middle"
+            android:textSize="15sp"
+            android:text="@string/back" />
+
+        <Button
+            android:id="@+id/settings_saveButton"
+            android:layout_width="120dp"
+            android:layout_height="40dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="2dp"
+            android:layout_marginEnd="2dp"
+            android:layout_marginTop="2dp"
+            android:background="@drawable/oval_responsive_button_medium_filled"
+            android:textColor="@drawable/medium_button_text_color"
+            android:textSize="15sp"
+            android:text="@string/save" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/settings_user"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/settings_buttons"
+        android:layout_marginTop="16dp"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <include layout="@layout/view_name_and_team"></include>
+
+    </LinearLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/settings_feedback"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_below="@+id/settings_user"
+        android:gravity="bottom">
+
+        <TextView
+            android:id="@+id/settings_feedbackText"
+            android:layout_above="@+id/settings_feedbackButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginEnd="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginStart="8dp"
+            android:text="@string/feedback_text" />
+
+        <Button
+            android:id="@+id/settings_feedbackButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_above="@+id/versionNumber"
+            android:text="@string/send_feedback" />
+
+        <TextView
+            android:id="@+id/versionNumber"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:maxLines="1"
+            tools:hint="Version" />
+    </RelativeLayout>
+
+
+</RelativeLayout>

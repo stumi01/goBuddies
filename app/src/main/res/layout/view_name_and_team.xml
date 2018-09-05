@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+       xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <com.rengwuxian.materialedittext.MaterialEditText
+        android:id="@+id/register_nickname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:ellipsize="end"
+        android:hint="Nickname"
+        android:imeOptions="actionDone"
+        android:inputType="textCapWords|textNoSuggestions"
+        android:lines="1"
+        android:maxLength="15"
+        android:maxLines="1"
+        app:met_baseColor="@color/base_gradient_middle"
+        app:met_floatingLabel="highlight"
+        app:met_floatingLabelTextColor="@color/base_gradient_middle"
+        app:met_maxCharacters="15"
+        app:met_minCharacters="1"
+        app:met_primaryColor="@color/base_gradient_middle"
+        app:met_underlineColor="@color/base_gradient_middle"/>
+
+    <fr.ganfra.materialspinner.MaterialSpinner
+        android:id="@+id/register_team_spinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginEnd="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginStart="16dp"
+        android:entries="@array/team_array"
+        android:popupBackground="@drawable/floating_activity_background"
+        android:textColor="@color/base_gradient_middle"
+        app:ms_arrowColor="@color/base_gradient_middle"
+        app:ms_baseColor="@color/base_gradient_middle"
+        app:ms_floatingLabelColor="@color/base_gradient_middle"
+        app:ms_highlightColor="@color/base_gradient_middle"
+        app:ms_hintColor="@color/base_gradient_middle"
+
+        />
+
+</merge>

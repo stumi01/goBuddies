@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:orientation="vertical">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                  android:id="@+id/team_member_row_layout"
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/team_member_icon"
+            android:src="@drawable/no_team_single"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:paddingRight="5dp"
+            android:paddingEnd="5dp"
+            android:paddingLeft="0dp"
+            android:paddingStart="0dp"/>
+
+        <TextView
+            android:id="@+id/team_member_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_toEndOf="@id/team_member_icon"
+            android:layout_toRightOf="@id/team_member_icon"
+            android:layout_centerVertical="true"
+            android:text="WWWWWWWWWWWWWWW"
+            android:textSize="14sp"
+            android:textStyle="bold"/>
+
+        <android.support.v7.widget.AppCompatImageView
+            android:id="@+id/team_member_edit"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:tint="@color/edit_pencil_button_color"
+            android:src="@drawable/ic_expand_more_black_24dp"/>
+
+
+        <ImageView
+            android:id="@+id/team_member_leader_icon"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_alignTop="@id/team_member_icon"
+            android:layout_alignStart="@id/team_member_icon"
+            android:layout_alignLeft="@id/team_member_icon"
+            android:src="@drawable/crown"/>
+
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/team_member_buttons"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="horizontal"
+        android:visibility="gone"
+        android:paddingBottom="6dp"
+        android:clipToPadding="false"> <!--http://stackoverflow.com/a/34393155 -->
+
+        <Button
+            android:id="@+id/pass_button"
+            android:layout_width="120dp"
+            android:layout_height="40dp"
+            android:text="Pass Lead"
+            android:textColor="@drawable/medium_button_text_color"
+            android:background="@drawable/oval_responsive_button_medium"
+            android:textSize="15sp"
+            android:layout_marginRight="8dp"
+            android:layout_marginEnd="8dp"/>
+
+        <Button
+            android:id="@+id/kick_button"
+            android:layout_width="120dp"
+            android:layout_height="40dp"
+            android:text="Kick"
+            android:textColor="@drawable/medium_button_text_color"
+            android:background="@drawable/oval_responsive_button_medium"
+            android:textSize="15sp"
+            android:layout_marginRight="8dp"
+            android:layout_marginEnd="8dp"/>
+
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="loading_text">Communicating...</string>
+    <string name="save">Save</string>
+    <string name="back">Back</string>
+    <string name="message_gps_disabled">Please enable GPS to use GOBuddies properly.</string>
+    <string name="error_server">There was a problem communicating with the server.</string>
+    <string name="feedback_text">If you have any suggestions about the app, feel free to send us a message!</string>
+    <string name="send_feedback">Send Feedback</string>
+    <string name="message_network_error">Cannot reach the server!</string>
+</resources>

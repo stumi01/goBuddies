@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.stumi.gobuddies.system.bubble.BubbleLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:id="@+id/bubble_root"
+        android:layout_width="@dimen/bubble_size"
+        android:layout_height="@dimen/bubble_size">
+
+        <ImageView
+            android:id="@+id/notification_background_transparent"
+            android:layout_width="@dimen/bubble_size"
+            android:layout_height="@dimen/bubble_size"
+            android:layout_gravity="center"
+            android:scaleType="centerCrop"
+            android:src="@drawable/head_bg" />
+
+        <ImageView
+            android:id="@+id/bubble_team_image"
+            android:layout_width="@dimen/bubble_size"
+            android:layout_height="@dimen/bubble_size"
+            android:layout_gravity="center"
+            android:scaleType="centerCrop"
+            android:src="@drawable/no_team_single" />
+
+        <ImageView
+            android:id="@+id/head_leader_icon"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_alignLeft="@id/bubble_team_image"
+            android:layout_alignStart="@id/bubble_team_image"
+            android:layout_alignTop="@id/bubble_team_image"
+            android:src="@drawable/crown"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/notification_requests"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentTop="true"
+            android:layout_gravity="center"
+            android:background="@drawable/notification_circle_requests"
+            android:gravity="center"
+            android:lines="1"
+            android:maxLines="1"
+            android:visibility="gone"
+            android:text="0"
+            android:textColor="@color/notification_circle_text" />
+
+        <TextView
+            android:id="@+id/notification_messages"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_gravity="center"
+            android:background="@drawable/notification_circle_messages"
+            android:gravity="center"
+            android:lines="1"
+            android:maxLines="1"
+            android:visibility="gone"
+            android:text="0"
+            android:textColor="@color/notification_circle_text" />
+
+        <TextView
+            android:id="@+id/notification_teams"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@id/bubble_team_image"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="false"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentRight="false"
+            android:layout_alignParentTop="false"
+            android:layout_alignRight="@id/bubble_team_image"
+            android:layout_centerInParent="false"
+            android:layout_gravity="center_horizontal"
+            android:layout_toEndOf="@id/bubble_team_image"
+            android:layout_toRightOf="@id/bubble_team_image"
+            android:lines="1"
+            android:maxLines="1"
+            android:paddingBottom="8dp"
+            android:text="0"
+            android:textAlignment="center"
+            android:textColor="@color/notification_circle_text" />
+
+
+    </RelativeLayout>
+
+</com.stumi.gobuddies.system.bubble.BubbleLayout>

@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:background="@drawable/floating_activity_background"
+              android:layout_width="260dp"
+              android:layout_height="wrap_content"
+              android:gravity="center_horizontal">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Incoming Join Request"
+        android:id="@+id/accept_dialog_title"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="15dp"/>
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp">
+
+        <ImageView
+            android:id="@+id/accept_dialog_party_icon"
+            android:src="@drawable/no_team_single"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"/>
+
+        <TextView
+            android:id="@+id/accept_dialog_party_size"
+            android:layout_width="30dp"
+            android:layout_height="20dp"
+            android:background="@drawable/team_finder_count_background"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:text="10"
+            android:layout_alignBottom="@id/accept_dialog_party_icon"
+            android:layout_alignLeft="@id/accept_dialog_party_icon"
+            android:layout_alignStart="@id/accept_dialog_party_icon"/>
+
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="WWWWWWWWWWWWWWW"
+        android:id="@+id/accept_dialog_party_name"
+        android:textSize="14sp"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/accept_dialog_party_distance"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:text="(100m)"
+        android:textSize="12sp"/>
+
+    <Button
+        android:layout_width="180dp"
+        android:layout_height="40dp"
+        android:text="Accept"
+        android:id="@+id/accept_dialog_accept"
+        android:layout_gravity="center_horizontal"
+        android:textColor="@drawable/medium_button_text_color"
+        android:background="@drawable/oval_responsive_button_medium"
+        android:textSize="15sp"
+        android:layout_marginTop="15dp"/>
+
+    <Button
+        android:layout_width="180dp"
+        android:layout_height="40dp"
+        android:text="Cancel"
+        android:id="@+id/accept_dialog_cancel"
+        android:layout_gravity="center_horizontal"
+        android:textColor="@color/base_pressed_gradient_end"
+        android:background="@drawable/oval_background_disabled_medium"
+        android:textSize="15sp"
+        android:layout_marginBottom="10dp"/>
+
+
+</LinearLayout>

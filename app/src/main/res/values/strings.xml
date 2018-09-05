@@ -1,0 +1,19 @@
+<resources>
+    <string name="preference_file_key">go_buddies_key</string>
+    <string name="partyfinder_not_available">Not available</string>
+    <string name="partyfinder_available">JOIN REQUEST</string>
+    <string name="partyfinder_request_sent">REQUEST SENT</string>
+    <string name="partyfinder_acceptable">ACCEPT JOIN</string>
+    <string name="permission_location_rationale">The Application needs to use the location to find buddies nearby.</string>
+    <string name="button_allow">Allow</string>
+    <string name="button_deny">Deny</string>
+    <string name="permission_location_denied">Good bye :(</string>
+    <string name="message_kicked">You\'ve been kicked from the partyDetails :(</string>
+    <string name="no_parties_nearby">No buddies nearby…</string>
+    <string name="mailto">feedback@gobuddies.io</string>
+    <string name="mail_subject">Go Buddies feedback</string>
+    <string name="mail_text">Hi Buddies!\n\n\n</string>
+    <string name="mail_chooser">Send mail…</string>
+    <string name="leave_party_text">Leave Party</string>
+
+</resources>
